@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class DefaultController implements ErrorController {
 
     @RequestMapping(value = "/error", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
-    @ApiOperation(value = "Link to swagger", notes = "Goto https://orangepage.herokuapp.com/swagger-ui.html", response = String.class)
+    @ApiOperation(value = "Link to swagger", notes = "Goto https://ourwallet-app.herokuapp.com/swagger-ui.html", response = String.class)
     public String handleError() {
-        return "Goto https://orangepage.herokuapp.com/swagger-ui.html";
+        return "Goto https://ourwallet-app.herokuapp.com/swagger-ui.html";
     }
 
     @Override
